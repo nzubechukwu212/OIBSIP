@@ -16,9 +16,6 @@ This project builds a machine learning model to classify iris flowers into one o
    - Visualized feature distributions per species with **boxplots**.
    - Examined a **correlation heatmap** to identify the most discriminative features.
 
-   ![Pairplot of Iris features by species](screenshots/01_pairplot.png)
-   ![Correlation heatmap](screenshots/06_correlation_heatmap.png)
-
 3. **Feature/Target Split** — Separated the dataset into features (`X`) and target labels (`y`).
 4. **Train/Test Split** — 80/20 split (`random_state=42`) using `train_test_split`.
 5. **Model Training & Evaluation** — Trained and evaluated two classifiers:
@@ -30,10 +27,6 @@ This project builds a machine learning model to classify iris flowers into one o
 
 ## Results
 Both the Logistic Regression and Random Forest models achieved **100% accuracy** on the held-out test set, with perfect precision, recall, and F1-scores across all three species. This is expected given the well-separated nature of the Iris classes (particularly *Setosa*, which is linearly separable from the other two species).
-
-| Logistic Regression | Random Forest |
-|:---:|:---:|
-| ![Confusion matrix — Logistic Regression](screenshots/07_confusion_matrix_logistic_regression.png) | ![Confusion matrix — Random Forest](screenshots/08_confusion_matrix_random_forest.png) |
 
 ## Tech Stack
 - **Language:** Python 3
